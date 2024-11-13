@@ -12,7 +12,7 @@ test_path = f'{DATA_ROOT}/arc-agi_test_challenges.json'
 sample_path = f'{DATA_ROOT}/sample_submission.json'
 
 
-with open("outputs/solutions_val.json", "r") as f:
+with open("outputs/solutions_eval.json", "r") as f:
     results = json.load(f)
     
 with open(eval_output_path, "r") as f:
