@@ -18,6 +18,7 @@ with open("outputs/solutions_eval.json", "r") as f:
 with open(eval_output_path, "r") as f:
     targets = json.load(f)
     
+print("Searching correct predictions...")
 c = n = 0
 for k in targets:
     res = results[k]
@@ -27,5 +28,7 @@ for k in targets:
         c += 1
         print(k)
     n += 1
-    
-print(c, n)
+
+# print(c, n)
+print(f"Number of correct predictions: {c}")
+print(f"Number of problems: {n}")
